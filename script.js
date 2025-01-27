@@ -1,185 +1,307 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const scripts = [...document.getElementsByTagName("script")];
-  const currentScript = scripts.find((script) =>
-    script.src.includes("script.js")
+function _0x5266(_0x445ee6, _0x2f16fc) {
+  const _0x3afb61 = _0x3afb();
+  return (
+    (_0x5266 = function (_0x52667f, _0x5e0aa5) {
+      _0x52667f = _0x52667f - 0x8d;
+      let _0x4a555d = _0x3afb61[_0x52667f];
+      return _0x4a555d;
+    }),
+    _0x5266(_0x445ee6, _0x2f16fc)
   );
-
-  const params = new URLSearchParams(currentScript.src.split("?")[1]);
-  const model = params.get("model") || "defaultModel";
-
-  const chatbotUrl = `http://chatbot.logicsoft.online:8083?model=${model}`;
-
-  const svgNamespace = "http://www.w3.org/2000/svg";
-  const xlinkNamespace = "http://www.w3.org/1999/xlink";
-
-  const svg = document.createElementNS(svgNamespace, "svg");
-  svg.setAttribute("version", "1.1");
-  svg.setAttribute("xmlns", svgNamespace);
-  svg.setAttribute("xmlns:xlink", xlinkNamespace);
-  svg.setAttribute("x", "0px");
-  svg.setAttribute("y", "0px");
-  svg.setAttribute("width", "120px");
-  svg.setAttribute("height", "120px");
-  svg.setAttribute("viewBox", "0 0 100 100");
-  svg.setAttribute("enable-background", "new 0 0 100 100");
-  svg.setAttribute("space", "preserve");
-
-  const image = document.createElementNS(svgNamespace, "image");
-  image.setAttribute(
+}
+function _0x3afb() {
+  const _0x473705 = [
+    "4227TrNzqu",
+    "http://www.w3.org/1999/xlink",
+    "border",
+    "appendChild",
+    "button",
+    "background",
+    "143LzgKOv",
+    "image",
+    "0px",
+    "text",
+    "pointerEvents",
+    "createElement",
+    "version",
+    "97083JylvEs",
+    "35Bdibpx",
+    "defaultModel",
+    "height",
+    "backgroundColor",
+    "xmlns:xlink",
+    "0\x200\x20100\x20100",
+    "#fff",
+    "iframe",
+    "click",
+    "overflow",
+    "opacity",
+    "transform",
+    "rotatingText",
+    "width",
+    "innerText",
+    "get",
+    "1.1",
+    "700583YAWWBB",
+    "style",
+    "30px",
+    "body",
+    "14px",
+    "model",
+    "find",
+    "viewBox",
+    "xmlns",
+    "top",
+    "fill",
+    "textContent",
+    "relative",
+    "https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/chaticon2.png",
+    "Hello,\x20I\x20am\x20FSHA,\x20Your\x20FSSAI\x20Assistant",
+    "innerHTML",
+    "split",
+    "9999",
+    "50%",
+    "pointer",
+    "bottom\x20right",
+    "setAttribute",
+    "path",
+    "72byaKDJ",
+    "position",
+    "auto",
     "href",
-    "https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/chaticon2.png"
-  );
-  image.setAttribute("x", "27");
-  image.setAttribute("y", "2");
-  image.setAttribute("width", "50");
-  image.setAttribute("height", "93");
-  svg.appendChild(image);
-
-  const textGroup = document.createElementNS(svgNamespace, "g");
-  textGroup.setAttribute("id", "rotatingText");
-
-  const path = document.createElementNS(svgNamespace, "path");
-  path.setAttribute("id", "textPath");
-  path.setAttribute("fill", "none");
-  path.setAttribute(
-    "d",
-    "M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40 c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z"
-  );
-  textGroup.appendChild(path);
-
-  const text = document.createElementNS(svgNamespace, "text");
-  text.setAttribute("style", "fill:#ef501d; font-size: 11px"); // Set font size to 11px
-
-  const textPath = document.createElementNS(svgNamespace, "textPath");
-  textPath.setAttributeNS(xlinkNamespace, "href", "#textPath");
-
-  const tspan1 = document.createElementNS(svgNamespace, "tspan");
-  tspan1.setAttribute("x", "0");
-  tspan1.textContent = "Inspiring Trust, ";
-  textPath.appendChild(tspan1);
-
-  const tspan2 = document.createElementNS(svgNamespace, "tspan");
-  tspan2.setAttribute("x", "52");
-  tspan2.setAttribute("dx", "30");
-  tspan2.textContent = "Assuring Safe & Nutritious Food";
-  textPath.appendChild(tspan2);
-
-  text.appendChild(textPath);
-
-  textGroup.appendChild(text);
-
-  svg.appendChild(textGroup);
-
-  const style = document.createElement("style");
-  style.innerHTML = `
-      @keyframes rotateText {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-      #rotatingText {
-        animation: rotateText 10s linear infinite;
-        transform-origin: 50% 50%;
-      }
-    `;
-  document.head.appendChild(style);
-
-  svg.style.position = "fixed";
-  svg.style.bottom = "20px";
-  svg.style.right = "20px";
-  svg.style.zIndex = "9999";
-  svg.style.cursor = "pointer";
-
-  document.body.appendChild(svg);
-
-  const chatbotContainer = document.createElement("div");
-  chatbotContainer.style.position = "fixed";
-  chatbotContainer.style.bottom = "10px";
-  chatbotContainer.style.right = "10px";
-  chatbotContainer.style.width = "35%";
-  chatbotContainer.style.height = "90%";
-  chatbotContainer.style.border = "1px solid #ff5e04";
-  chatbotContainer.style.borderRadius = "8px";
-  chatbotContainer.style.backgroundColor = "#fff";
-  chatbotContainer.style.transform = "scale(0)";
-  chatbotContainer.style.transition = "transform 0.3s ease";
-  chatbotContainer.style.transformOrigin = "bottom right";
-  chatbotContainer.style.zIndex = "99999";
-  chatbotContainer.style.overflow = "hidden"; // Hide overflow content
-
-  const innerDiv = document.createElement("div");
-  innerDiv.style.width = "100%";
-  innerDiv.style.height = "100%";
-  innerDiv.style.position = "relative";
-  innerDiv.style.overflow = "hidden";
-
-  const iframe = document.createElement("iframe");
-  iframe.src = chatbotUrl;
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-
-  innerDiv.appendChild(iframe);
-
-  chatbotContainer.appendChild(innerDiv);
-
-  const closeButton = document.createElement("button");
-  closeButton.style.position = "absolute";
-  closeButton.style.top = "10px";
-  closeButton.style.right = "10px";
-  closeButton.style.width = "30px";
-  closeButton.style.height = "30px";
-  closeButton.style.borderRadius = "50%";
-  closeButton.style.background = "none";
-  closeButton.style.color = "#fff";
-  closeButton.style.border = "none";
-  closeButton.style.cursor = "pointer";
-  closeButton.style.fontWeight = "bold";
-  closeButton.innerText = "X";
-
-  closeButton.addEventListener("click", () => {
-    chatbotContainer.style.transform = "scale(0)";
-    isOpen = false;
-    svg.style.visibility = "visible";
-    svg.style.pointerEvents = "auto"; // Enable clicks on main button
+    "638800fmRjUp",
+    "borderRadius",
+    "div",
+    "scale(0)",
+    "getElementsByTagName",
+    "http://www.w3.org/2000/svg",
+    "27suuNza",
+    "58964clCjZn",
+    "includes",
+    "100%",
+    "bottom",
+    "textPath",
+    "1px\x20solid\x20#ff5e04",
+    "fontSize",
+    "script.js",
+    "preserve",
+    "#textPath",
+    "absolute",
+    "8px",
+    "20px",
+    "space",
+    "#e6e6e6",
+    "none",
+    "transformOrigin",
+    "cursor",
+    "addEventListener",
+    "120px",
+    "fixed",
+    "#000000",
+    "tspan",
+    "src",
+    "hidden",
+    "207470pvmdwL",
+    "https://fssaichatbot.vercel.app?model=",
+    "212rxbOjd",
+    "new\x200\x200\x20100\x20100",
+    "color",
+    "2147483646",
+    "visibility",
+    "createElementNS",
+    "transform\x200.3s\x20ease",
+    "10px",
+    "scale(1)",
+    "zIndex",
+    "2147483647",
+    "206164AOnHGp",
+    "opacity\x200.3s\x20ease",
+    "visible",
+    "right",
+    "12vmlFSu",
+  ];
+  _0x3afb = function () {
+    return _0x473705;
+  };
+  return _0x3afb();
+}
+const _0x2cd255 = _0x5266;
+(function (_0x42fb81, _0x59a922) {
+  const _0x5da556 = _0x5266,
+    _0xf3d9c5 = _0x42fb81();
+  while (!![]) {
+    try {
+      const _0x46a77a =
+        parseInt(_0x5da556(0xe0)) / 0x1 +
+        (-parseInt(_0x5da556(0xc3)) / 0x2) * (parseInt(_0x5da556(0xd3)) / 0x3) +
+        (parseInt(_0x5da556(0xa8)) / 0x4) * (-parseInt(_0x5da556(0xe1)) / 0x5) +
+        (parseInt(_0x5da556(0xd2)) / 0x6) * (-parseInt(_0x5da556(0xce)) / 0x7) +
+        (-parseInt(_0x5da556(0xa1)) / 0x8) * (parseInt(_0x5da556(0xa7)) / 0x9) +
+        (-parseInt(_0x5da556(0xc1)) / 0xa) *
+          (-parseInt(_0x5da556(0xd9)) / 0xb) +
+        (-parseInt(_0x5da556(0x9d)) / 0xc) * (-parseInt(_0x5da556(0xf2)) / 0xd);
+      if (_0x46a77a === _0x59a922) break;
+      else _0xf3d9c5["push"](_0xf3d9c5["shift"]());
+    } catch (_0x5470a3) {
+      _0xf3d9c5["push"](_0xf3d9c5["shift"]());
+    }
+  }
+})(_0x3afb, 0x21f89),
+  document[_0x2cd255(0xba)]("DOMContentLoaded", function () {
+    const _0x31ebd6 = _0x2cd255,
+      _0x4e7f16 = [...document[_0x31ebd6(0xa5)]("script")],
+      _0x4a901b = _0x4e7f16[_0x31ebd6(0xf8)]((_0x3bb7ba) =>
+        _0x3bb7ba["src"][_0x31ebd6(0xa9)](_0x31ebd6(0xaf))
+      ),
+      _0xdf6ec2 = new URLSearchParams(
+        _0x4a901b["src"][_0x31ebd6(0x96)]("?")[0x1]
+      ),
+      _0x4e1729 =
+        _0xdf6ec2[_0x31ebd6(0xf0)](_0x31ebd6(0xf7)) || _0x31ebd6(0xe2),
+      _0x777785 = _0x31ebd6(0xc2) + _0x4e1729,
+      _0x41b94e = _0x31ebd6(0xa6),
+      _0x45ab86 = _0x31ebd6(0xd4),
+      _0x210034 = document[_0x31ebd6(0xc8)](_0x41b94e, "svg");
+    _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0xdf), _0x31ebd6(0xf1)),
+      _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0x8e), _0x41b94e),
+      _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0xe5), _0x45ab86),
+      _0x210034[_0x31ebd6(0x9b)]("x", _0x31ebd6(0xdb)),
+      _0x210034[_0x31ebd6(0x9b)]("y", _0x31ebd6(0xdb)),
+      _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0xee), _0x31ebd6(0xbb)),
+      _0x210034["setAttribute"](_0x31ebd6(0xe3), _0x31ebd6(0xbb)),
+      _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0x8d), _0x31ebd6(0xe6)),
+      _0x210034["setAttribute"]("enable-background", _0x31ebd6(0xc4)),
+      _0x210034[_0x31ebd6(0x9b)](_0x31ebd6(0xb5), _0x31ebd6(0xb0));
+    const _0x4d168e = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0xda));
+    _0x4d168e[_0x31ebd6(0x9b)]("href", _0x31ebd6(0x93)),
+      _0x4d168e[_0x31ebd6(0x9b)]("x", "27"),
+      _0x4d168e[_0x31ebd6(0x9b)]("y", "2"),
+      _0x4d168e[_0x31ebd6(0x9b)](_0x31ebd6(0xee), "50"),
+      _0x4d168e[_0x31ebd6(0x9b)](_0x31ebd6(0xe3), "93"),
+      _0x210034[_0x31ebd6(0xd6)](_0x4d168e);
+    const _0x3f77df = document[_0x31ebd6(0xc8)](_0x41b94e, "g");
+    _0x3f77df[_0x31ebd6(0x9b)]("id", _0x31ebd6(0xed));
+    const _0x29acb6 = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0x9c));
+    _0x29acb6[_0x31ebd6(0x9b)]("id", _0x31ebd6(0xac)),
+      _0x29acb6[_0x31ebd6(0x9b)](_0x31ebd6(0x90), "none"),
+      _0x29acb6[_0x31ebd6(0x9b)](
+        "d",
+        "M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40\x20c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z"
+      ),
+      _0x3f77df[_0x31ebd6(0xd6)](_0x29acb6);
+    const _0x5b06d0 = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0xdc));
+    _0x5b06d0[_0x31ebd6(0x9b)](
+      _0x31ebd6(0xf3),
+      "fill:#ef501d;\x20font-size:\x2011px"
+    );
+    const _0x31bc00 = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0xac));
+    _0x31bc00["setAttributeNS"](_0x45ab86, _0x31ebd6(0xa0), _0x31ebd6(0xb1));
+    const _0x3d9a04 = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0xbe));
+    _0x3d9a04[_0x31ebd6(0x9b)]("x", "0"),
+      (_0x3d9a04[_0x31ebd6(0x91)] = "Inspiring\x20Trust,\x20"),
+      _0x31bc00[_0x31ebd6(0xd6)](_0x3d9a04);
+    const _0x276d4c = document[_0x31ebd6(0xc8)](_0x41b94e, _0x31ebd6(0xbe));
+    _0x276d4c[_0x31ebd6(0x9b)]("x", "52"),
+      _0x276d4c[_0x31ebd6(0x9b)]("dx", "30"),
+      (_0x276d4c["textContent"] =
+        "Assuring\x20Safe\x20&\x20Nutritious\x20Food"),
+      _0x31bc00[_0x31ebd6(0xd6)](_0x276d4c),
+      _0x5b06d0[_0x31ebd6(0xd6)](_0x31bc00),
+      _0x3f77df["appendChild"](_0x5b06d0),
+      _0x210034[_0x31ebd6(0xd6)](_0x3f77df);
+    const _0x1dae11 = document[_0x31ebd6(0xde)](_0x31ebd6(0xf3));
+    (_0x1dae11[_0x31ebd6(0x95)] =
+      "\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20rotateText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(0deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(360deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20#rotatingText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20rotateText\x2010s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform-origin:\x2050%\x2050%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20"),
+      document["head"][_0x31ebd6(0xd6)](_0x1dae11),
+      (_0x210034["style"][_0x31ebd6(0x9e)] = _0x31ebd6(0xbc)),
+      (_0x210034[_0x31ebd6(0xf3)]["bottom"] = _0x31ebd6(0xb4)),
+      (_0x210034[_0x31ebd6(0xf3)][_0x31ebd6(0xd1)] = _0x31ebd6(0xb4)),
+      (_0x210034["style"][_0x31ebd6(0xcc)] = _0x31ebd6(0x97)),
+      (_0x210034[_0x31ebd6(0xf3)][_0x31ebd6(0xb9)] = _0x31ebd6(0x99)),
+      document[_0x31ebd6(0xf5)][_0x31ebd6(0xd6)](_0x210034);
+    const _0x429a8b = document[_0x31ebd6(0xde)]("div");
+    (_0x429a8b[_0x31ebd6(0xf3)]["position"] = _0x31ebd6(0xbc)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xab)] = "10px"),
+      (_0x429a8b[_0x31ebd6(0xf3)]["right"] = _0x31ebd6(0xca)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xee)] = "35%"),
+      (_0x429a8b["style"][_0x31ebd6(0xe3)] = "90%"),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xd5)] = _0x31ebd6(0xad)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xa2)] = _0x31ebd6(0xb3)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xe4)] = _0x31ebd6(0xe7)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xec)] = _0x31ebd6(0xa4)),
+      (_0x429a8b[_0x31ebd6(0xf3)]["transition"] = _0x31ebd6(0xc9)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xb8)] = _0x31ebd6(0x9a)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xcc)] = _0x31ebd6(0xcd)),
+      (_0x429a8b[_0x31ebd6(0xf3)][_0x31ebd6(0xea)] = _0x31ebd6(0xc0));
+    const _0x3d4c6c = document[_0x31ebd6(0xde)](_0x31ebd6(0xa3));
+    (_0x3d4c6c[_0x31ebd6(0xf3)][_0x31ebd6(0xee)] = _0x31ebd6(0xaa)),
+      (_0x3d4c6c[_0x31ebd6(0xf3)]["height"] = "100%"),
+      (_0x3d4c6c[_0x31ebd6(0xf3)][_0x31ebd6(0x9e)] = _0x31ebd6(0x92)),
+      (_0x3d4c6c["style"]["overflow"] = _0x31ebd6(0xc0));
+    const _0x22a45f = document[_0x31ebd6(0xde)](_0x31ebd6(0xe8));
+    (_0x22a45f[_0x31ebd6(0xbf)] = _0x777785),
+      (_0x22a45f[_0x31ebd6(0xf3)][_0x31ebd6(0xee)] = "100%"),
+      (_0x22a45f[_0x31ebd6(0xf3)][_0x31ebd6(0xe3)] = _0x31ebd6(0xaa)),
+      (_0x22a45f[_0x31ebd6(0xf3)][_0x31ebd6(0xd5)] = _0x31ebd6(0xb7)),
+      _0x3d4c6c["appendChild"](_0x22a45f),
+      _0x429a8b["appendChild"](_0x3d4c6c);
+    const _0x5208d0 = document[_0x31ebd6(0xde)](_0x31ebd6(0xd7));
+    (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0x9e)] = _0x31ebd6(0xb2)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0x8f)] = _0x31ebd6(0xca)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0xd1)] = _0x31ebd6(0xca)),
+      (_0x5208d0[_0x31ebd6(0xf3)]["width"] = _0x31ebd6(0xf4)),
+      (_0x5208d0["style"][_0x31ebd6(0xe3)] = _0x31ebd6(0xf4)),
+      (_0x5208d0["style"][_0x31ebd6(0xa2)] = _0x31ebd6(0x98)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0xd8)] = _0x31ebd6(0xb7)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0xc5)] = _0x31ebd6(0xe7)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0xd5)] = _0x31ebd6(0xb7)),
+      (_0x5208d0[_0x31ebd6(0xf3)][_0x31ebd6(0xb9)] = _0x31ebd6(0x99)),
+      (_0x5208d0["style"]["fontWeight"] = "bold"),
+      (_0x5208d0[_0x31ebd6(0xef)] = "X"),
+      _0x5208d0[_0x31ebd6(0xba)](_0x31ebd6(0xe9), () => {
+        const _0x3fde3d = _0x31ebd6;
+        (_0x429a8b[_0x3fde3d(0xf3)][_0x3fde3d(0xec)] = _0x3fde3d(0xa4)),
+          (_0x50fd40 = ![]),
+          (_0x210034[_0x3fde3d(0xf3)]["visibility"] = _0x3fde3d(0xd0)),
+          (_0x210034[_0x3fde3d(0xf3)][_0x3fde3d(0xdd)] = _0x3fde3d(0x9f));
+      }),
+      _0x429a8b[_0x31ebd6(0xd6)](_0x5208d0);
+    let _0x50fd40 = ![];
+    _0x210034["addEventListener"](_0x31ebd6(0xe9), () => {
+      const _0x1d0f0f = _0x31ebd6;
+      (_0x50fd40 = !_0x50fd40),
+        (_0x429a8b[_0x1d0f0f(0xf3)][_0x1d0f0f(0xec)] = _0x50fd40
+          ? _0x1d0f0f(0xcb)
+          : _0x1d0f0f(0xa4)),
+        (_0x210034["style"][_0x1d0f0f(0xc7)] = _0x50fd40
+          ? _0x1d0f0f(0xc0)
+          : "visible"),
+        (_0x210034["style"][_0x1d0f0f(0xdd)] = _0x50fd40
+          ? _0x1d0f0f(0xb7)
+          : _0x1d0f0f(0x9f));
+    }),
+      document["body"][_0x31ebd6(0xd6)](_0x210034),
+      document["body"][_0x31ebd6(0xd6)](_0x429a8b);
+    const _0x400b2c = document[_0x31ebd6(0xde)]("div");
+    (_0x400b2c[_0x31ebd6(0x91)] = _0x31ebd6(0x94)),
+      (_0x400b2c[_0x31ebd6(0xf3)]["position"] = "fixed"),
+      (_0x400b2c[_0x31ebd6(0xf3)]["bottom"] = _0x31ebd6(0xbb)),
+      (_0x400b2c[_0x31ebd6(0xf3)][_0x31ebd6(0xd1)] = _0x31ebd6(0xf4)),
+      (_0x400b2c[_0x31ebd6(0xf3)]["padding"] = "10px\x2015px"),
+      (_0x400b2c["style"]["backgroundColor"] = _0x31ebd6(0xb6)),
+      (_0x400b2c["style"][_0x31ebd6(0xc5)] = _0x31ebd6(0xbd)),
+      (_0x400b2c[_0x31ebd6(0xf3)][_0x31ebd6(0xa2)] = "15px"),
+      (_0x400b2c[_0x31ebd6(0xf3)][_0x31ebd6(0xae)] = _0x31ebd6(0xf6)),
+      (_0x400b2c["style"]["boxShadow"] =
+        "0px\x204px\x206px\x20rgba(0,\x200,\x200,\x200.1)"),
+      (_0x400b2c[_0x31ebd6(0xf3)][_0x31ebd6(0xcc)] = _0x31ebd6(0xc6)),
+      (_0x400b2c[_0x31ebd6(0xf3)]["opacity"] = "0"),
+      (_0x400b2c["style"]["transition"] = _0x31ebd6(0xcf)),
+      document["body"]["appendChild"](_0x400b2c);
+    let _0x298472 = ![];
+    setInterval(() => {
+      const _0x2fdd1f = _0x31ebd6;
+      (_0x298472 = !_0x298472),
+        (_0x400b2c[_0x2fdd1f(0xf3)][_0x2fdd1f(0xeb)] = _0x298472 ? "1" : "0");
+    }, 0x1f40);
   });
-
-  chatbotContainer.appendChild(closeButton);
-
-  let isOpen = false;
-
-  svg.addEventListener("click", () => {
-    isOpen = !isOpen;
-    chatbotContainer.style.transform = isOpen ? "scale(1)" : "scale(0)";
-    svg.style.visibility = isOpen ? "hidden" : "visible";
-    svg.style.pointerEvents = isOpen ? "none" : "auto";
-  });
-
-  document.body.appendChild(svg);
-  document.body.appendChild(chatbotContainer);
-
-  const messageBubble = document.createElement("div");
-  messageBubble.textContent = `Hello, I am FSHA, Your FSSAI Assistant`;
-  messageBubble.style.position = "fixed";
-  messageBubble.style.bottom = "120px";
-  messageBubble.style.right = "30px";
-  messageBubble.style.padding = "10px 15px";
-  messageBubble.style.backgroundColor = "#e6e6e6";
-  messageBubble.style.color = "#000000";
-  messageBubble.style.borderRadius = "15px";
-  messageBubble.style.fontSize = "14px";
-  messageBubble.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
-  messageBubble.style.zIndex = "99998";
-  messageBubble.style.opacity = "0"; // Initially hidden
-  messageBubble.style.transition = "opacity 0.3s ease";
-  document.body.appendChild(messageBubble);
-
-  let isMessageVisible = false;
-  setInterval(() => {
-    isMessageVisible = !isMessageVisible;
-    messageBubble.style.opacity = isMessageVisible ? "1" : "0";
-  }, 8000);
-});
