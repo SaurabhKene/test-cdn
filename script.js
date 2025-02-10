@@ -1,197 +1,306 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const scripts = [...document.getElementsByTagName("script")];
-  const currentScript = scripts.find((script) =>
-    script.src.includes("script.js")
+function _0x59fb() {
+  const _0x46a521 = [
+    "createElementNS",
+    "width",
+    "innerHTML",
+    "439061aeKraN",
+    "opacity",
+    "model",
+    "transform",
+    "30%",
+    "split",
+    "visible",
+    "scale(0)",
+    "path",
+    "click",
+    "3660CNOvfe",
+    "0px\x204px\x206px\x20rgba(0,\x200,\x200,\x200.1)",
+    "fixed",
+    "5007540aXEvbO",
+    "509999990",
+    "setAttribute",
+    "cursor",
+    "10px",
+    "10552977RuZQwf",
+    "scale(1)",
+    "0px",
+    "#textPath",
+    "get",
+    "http://localhost:3000/?model=",
+    "16px",
+    "M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40\x20c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z",
+    "510000000",
+    "fontWeight",
+    "appendChild",
+    "20px",
+    "30px",
+    "bottom",
+    "rotatingText",
+    "zIndex",
+    "space",
+    "999999",
+    "\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20rotateText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(0deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(360deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20#rotatingText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20rotateText\x2010s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform-origin:\x2050%\x2050%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20",
+    "auto",
+    "backgroundColor",
+    "1.1",
+    "opacity\x200.3s\x20ease",
+    "color",
+    "Inspiring\x20Trust,\x20",
+    "120px",
+    "borderRadius",
+    "getElementsByTagName",
+    "visibility",
+    "http://www.w3.org/1999/xlink",
+    "#000000",
+    "tspan",
+    "8px",
+    "84qFdsrd",
+    "hidden",
+    "fontSize",
+    "overflow",
+    "addEventListener",
+    "height",
+    "right",
+    "pointer",
+    "image",
+    "setAttributeNS",
+    "iframe",
+    "DOMContentLoaded",
+    "createElement",
+    "8rEcIiH",
+    "14px",
+    "3509319zGUAva",
+    "includes",
+    "src",
+    "Images/Animation\x20-\x201738834021266.gif",
+    "href",
+    "body",
+    "40UXduBP",
+    "84GQoyiu",
+    "div",
+    "102CvFcIF",
+    "fill:#ff5e04;\x20font-size:\x2011px",
+    "#fff",
+    "top",
+    "new\x200\x200\x20100\x20100",
+    "100%",
+    "script.js",
+    "black",
+    "transition",
+    "0\x200\x20100\x20100",
+    "viewBox",
+    "position",
+    "textPath",
+    "script",
+    "none",
+    "version",
+    "svg",
+    "defaultModel",
+    "style",
+    "innerText",
+    "button",
+    "37068UFarhL",
+    "textContent",
+    "3693921EGpyKB",
+    "head",
+    "text",
+    "10px\x2015px",
+  ];
+  _0x59fb = function () {
+    return _0x46a521;
+  };
+  return _0x59fb();
+}
+function _0x5813(_0x47b24d, _0x3a6ce3) {
+  const _0x59fbe3 = _0x59fb();
+  return (
+    (_0x5813 = function (_0x5813cf, _0x5e89d5) {
+      _0x5813cf = _0x5813cf - 0xce;
+      let _0x543ffc = _0x59fbe3[_0x5813cf];
+      return _0x543ffc;
+    }),
+    _0x5813(_0x47b24d, _0x3a6ce3)
   );
-
-  const params = new URLSearchParams(currentScript.src.split("?")[1]);
-  const model = params.get("model") || "defaultModel";
-
-  const chatbotUrl = `http://localhost:3000/?model=${model}`;
-
-  const svgNamespace = "http://www.w3.org/2000/svg";
-  const xlinkNamespace = "http://www.w3.org/1999/xlink";
-
-  const svg = document.createElementNS(svgNamespace, "svg");
-  svg.setAttribute("version", "1.1");
-  svg.setAttribute("xmlns", svgNamespace);
-  svg.setAttribute("xmlns:xlink", xlinkNamespace);
-  svg.setAttribute("x", "0px");
-  svg.setAttribute("y", "0px");
-  svg.setAttribute("width", "120px");
-  svg.setAttribute("height", "120px");
-  svg.setAttribute("viewBox", "0 0 100 100");
-  svg.setAttribute("enable-background", "new 0 0 100 100");
-  svg.setAttribute("space", "preserve");
-
-  const image = document.createElementNS(svgNamespace, "image");
-  image.setAttribute("href", "Images/Animation - 1738834021266.gif");
-  image.setAttribute("x", "17");
-  image.setAttribute("y", "5");
-  image.setAttribute("width", "70");
-  image.setAttribute("height", "93");
-  svg.appendChild(image);
-
-  const textGroup = document.createElementNS(svgNamespace, "g");
-  textGroup.setAttribute("id", "rotatingText");
-
-  const path = document.createElementNS(svgNamespace, "path");
-  path.setAttribute("id", "textPath");
-  path.setAttribute("fill", "none");
-  path.setAttribute(
-    "d",
-    "M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40 c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z"
-  );
-  textGroup.appendChild(path);
-
-  const text = document.createElementNS(svgNamespace, "text");
-  text.setAttribute("style", "fill:#ff5e04; font-size: 11px"); // Set font size to 11px
-
-  const textPath = document.createElementNS(svgNamespace, "textPath");
-  textPath.setAttributeNS(xlinkNamespace, "href", "#textPath");
-
-  const tspan1 = document.createElementNS(svgNamespace, "tspan");
-  tspan1.setAttribute("x", "0");
-  tspan1.textContent = "Inspiring Trust, ";
-  textPath.appendChild(tspan1);
-
-  const tspan2 = document.createElementNS(svgNamespace, "tspan");
-  tspan2.setAttribute("x", "52");
-  tspan2.setAttribute("dx", "30");
-  tspan2.textContent = "Assuring Safe & Nutritious Food";
-  textPath.appendChild(tspan2);
-
-  text.appendChild(textPath);
-
-  textGroup.appendChild(text);
-
-  svg.appendChild(textGroup);
-
-  const style = document.createElement("style");
-  style.innerHTML = `
-      @keyframes rotateText {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-      #rotatingText {
-        animation: rotateText 10s linear infinite;
-        transform-origin: 50% 50%;
-      }
-    `;
-  document.head.appendChild(style);
-
-  svg.style.position = "fixed";
-  svg.style.bottom = "20px";
-  svg.style.right = "20px";
-  svg.style.zIndex = "999999";
-  svg.style.cursor = "pointer";
-
-  document.body.appendChild(svg);
-
-  const chatbotContainer = document.createElement("div");
-  chatbotContainer.style.position = "fixed";
-  chatbotContainer.style.bottom = "10px";
-  chatbotContainer.style.right = "10px";
-  chatbotContainer.style.width = "30%";
-  chatbotContainer.style.height = "90%";
-  //chatbotContainer.style.border = "1px solid #ff5e04";
-  chatbotContainer.style.borderRadius = "8px";
-  chatbotContainer.style.backgroundColor = "#fff";
-  chatbotContainer.style.transform = "scale(0)";
-  chatbotContainer.style.transition = "transform 0.3s ease";
-  chatbotContainer.style.transformOrigin = "bottom right";
-  chatbotContainer.style.zIndex = "510000000";
-  chatbotContainer.style.overflow = "hidden";
-
-  const innerDiv = document.createElement("div");
-  innerDiv.style.width = "100%";
-  innerDiv.style.height = "100%";
-  innerDiv.style.position = "relative";
-  innerDiv.style.overflow = "hidden";
-
-  const iframe = document.createElement("iframe");
-  iframe.src = chatbotUrl;
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.border = "none";
-
-  innerDiv.appendChild(iframe);
-
-  chatbotContainer.appendChild(innerDiv);
-
-  const closeButton = document.createElement("button");
-  closeButton.style.position = "absolute";
-  closeButton.style.top = "16px";
-  closeButton.style.right = "10px";
-  closeButton.style.width = "30px";
-  closeButton.style.height = "30px";
-  closeButton.style.borderRadius = "50%";
-  closeButton.style.background = "none";
-  closeButton.style.color = "black";
-  closeButton.style.border = "none";
-  closeButton.style.cursor = "pointer";
-  closeButton.style.fontWeight = "bold";
-  closeButton.innerText = "✖";
-
-  closeButton.addEventListener("click", () => {
-    chatbotContainer.style.transform = "scale(0)";
-    isOpen = false;
-    svg.style.visibility = "visible";
-    svg.style.pointerEvents = "auto";
-  });
-
-  chatbotContainer.appendChild(closeButton);
-
-  let isOpen = false;
-
-  svg.addEventListener("click", () => {
-    isOpen = !isOpen;
-    chatbotContainer.style.transform = isOpen ? "scale(1)" : "scale(0)";
-    svg.style.visibility = isOpen ? "hidden" : "visible";
-    svg.style.pointerEvents = isOpen ? "none" : "auto";
-  });
-
-  document.body.appendChild(svg);
-  document.body.appendChild(chatbotContainer);
-
-  const messageBubble = document.createElement("div");
-  messageBubble.textContent = `Hello, I am FSHA, Your FSSAI Assistant`;
-  messageBubble.style.position = "fixed";
-  messageBubble.style.bottom = "120px";
-  messageBubble.style.right = "30px";
-  messageBubble.style.padding = "10px 15px";
-  messageBubble.style.backgroundColor = "#e6e6e6";
-  messageBubble.style.color = "#000000";
-  messageBubble.style.borderRadius = "10px";
-  messageBubble.style.fontSize = "14px";
-  messageBubble.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
-  messageBubble.style.zIndex = "509999990";
-  messageBubble.style.opacity = "0";
-  messageBubble.style.transition = "opacity 0.3s ease";
-  document.body.appendChild(messageBubble);
-
-  let isMessageVisible = false;
-  setInterval(() => {
-    isMessageVisible = !isMessageVisible;
-    messageBubble.style.opacity = isMessageVisible ? "1" : "0";
-  }, 8000);
-
-  // Media query to handle screen resize
-  function handleResize() {
-    if (window.innerWidth < 1000) {
-      chatbotContainer.style.width = "100%";
-      chatbotContainer.style.right = "0";
-    } else {
-      chatbotContainer.style.width = "30%";
-      chatbotContainer.style.right = "10px";
+}
+const _0x4e33e5 = _0x5813;
+(function (_0x3a7172, _0x1e7740) {
+  const _0x43c23e = _0x5813,
+    _0xdcd611 = _0x3a7172();
+  while (!![]) {
+    try {
+      const _0x5903fb =
+        (parseInt(_0x43c23e(0x11d)) / 0x1) * (parseInt(_0x43c23e(0xdd)) / 0x2) +
+        parseInt(_0x43c23e(0xec)) / 0x3 +
+        (parseInt(_0x43c23e(0x10a)) / 0x4) *
+          (-parseInt(_0x43c23e(0xf2)) / 0x5) +
+        (parseInt(_0x43c23e(0xf5)) / 0x6) * (parseInt(_0x43c23e(0x113)) / 0x7) +
+        (parseInt(_0x43c23e(0xea)) / 0x8) * (parseInt(_0x43c23e(0x125)) / 0x9) +
+        -parseInt(_0x43c23e(0x120)) / 0xa +
+        (parseInt(_0x43c23e(0x10c)) / 0xb) * (-parseInt(_0x43c23e(0xf3)) / 0xc);
+      if (_0x5903fb === _0x1e7740) break;
+      else _0xdcd611["push"](_0xdcd611["shift"]());
+    } catch (_0x498a3d) {
+      _0xdcd611["push"](_0xdcd611["shift"]());
     }
   }
-
-  window.addEventListener("resize", handleResize);
-
-  handleResize();
-});
+})(_0x59fb, 0x9b762),
+  document[_0x4e33e5(0xe1)](_0x4e33e5(0xe8), function () {
+    const _0x3cbdf5 = _0x4e33e5,
+      _0x1d839c = [...document[_0x3cbdf5(0xd7)](_0x3cbdf5(0x102))],
+      _0x3c095f = _0x1d839c["find"]((_0x2e1f46) =>
+        _0x2e1f46[_0x3cbdf5(0xee)][_0x3cbdf5(0xed)](_0x3cbdf5(0xfb))
+      ),
+      _0x2d09a3 = new URLSearchParams(
+        _0x3c095f[_0x3cbdf5(0xee)][_0x3cbdf5(0x118)]("?")[0x1]
+      ),
+      _0x70c648 =
+        _0x2d09a3[_0x3cbdf5(0x129)](_0x3cbdf5(0x115)) || _0x3cbdf5(0x106),
+      _0x4f7531 = _0x3cbdf5(0x12a) + _0x70c648,
+      _0x22fa0f = "http://www.w3.org/2000/svg",
+      _0x4c2436 = _0x3cbdf5(0xd9),
+      _0x59dfd8 = document[_0x3cbdf5(0x110)](_0x22fa0f, _0x3cbdf5(0x105));
+    _0x59dfd8[_0x3cbdf5(0x122)](_0x3cbdf5(0x104), _0x3cbdf5(0xd1)),
+      _0x59dfd8[_0x3cbdf5(0x122)]("xmlns", _0x22fa0f),
+      _0x59dfd8["setAttribute"]("xmlns:xlink", _0x4c2436),
+      _0x59dfd8["setAttribute"]("x", _0x3cbdf5(0x127)),
+      _0x59dfd8[_0x3cbdf5(0x122)]("y", "0px"),
+      _0x59dfd8["setAttribute"](_0x3cbdf5(0x111), "120px"),
+      _0x59dfd8[_0x3cbdf5(0x122)](_0x3cbdf5(0xe2), _0x3cbdf5(0xd5)),
+      _0x59dfd8[_0x3cbdf5(0x122)](_0x3cbdf5(0xff), _0x3cbdf5(0xfe)),
+      _0x59dfd8[_0x3cbdf5(0x122)]("enable-background", _0x3cbdf5(0xf9)),
+      _0x59dfd8[_0x3cbdf5(0x122)](_0x3cbdf5(0x135), "preserve");
+    const _0x47ece3 = document[_0x3cbdf5(0x110)](_0x22fa0f, _0x3cbdf5(0xe5));
+    _0x47ece3[_0x3cbdf5(0x122)](_0x3cbdf5(0xf0), _0x3cbdf5(0xef)),
+      _0x47ece3[_0x3cbdf5(0x122)]("x", "17"),
+      _0x47ece3[_0x3cbdf5(0x122)]("y", "5"),
+      _0x47ece3[_0x3cbdf5(0x122)]("width", "70"),
+      _0x47ece3[_0x3cbdf5(0x122)]("height", "93"),
+      _0x59dfd8[_0x3cbdf5(0x12f)](_0x47ece3);
+    const _0x468185 = document["createElementNS"](_0x22fa0f, "g");
+    _0x468185["setAttribute"]("id", _0x3cbdf5(0x133));
+    const _0xde79b0 = document[_0x3cbdf5(0x110)](_0x22fa0f, _0x3cbdf5(0x11b));
+    _0xde79b0[_0x3cbdf5(0x122)]("id", _0x3cbdf5(0x101)),
+      _0xde79b0[_0x3cbdf5(0x122)]("fill", _0x3cbdf5(0x103)),
+      _0xde79b0["setAttribute"]("d", _0x3cbdf5(0x12c)),
+      _0x468185[_0x3cbdf5(0x12f)](_0xde79b0);
+    const _0x5521d0 = document[_0x3cbdf5(0x110)](_0x22fa0f, _0x3cbdf5(0x10e));
+    _0x5521d0["setAttribute"](_0x3cbdf5(0x107), _0x3cbdf5(0xf6));
+    const _0x24de1f = document["createElementNS"](_0x22fa0f, "textPath");
+    _0x24de1f[_0x3cbdf5(0xe6)](_0x4c2436, "href", _0x3cbdf5(0x128));
+    const _0x119796 = document[_0x3cbdf5(0x110)](_0x22fa0f, _0x3cbdf5(0xdb));
+    _0x119796["setAttribute"]("x", "0"),
+      (_0x119796[_0x3cbdf5(0x10b)] = _0x3cbdf5(0xd4)),
+      _0x24de1f[_0x3cbdf5(0x12f)](_0x119796);
+    const _0x1dd896 = document[_0x3cbdf5(0x110)](_0x22fa0f, "tspan");
+    _0x1dd896["setAttribute"]("x", "52"),
+      _0x1dd896["setAttribute"]("dx", "30"),
+      (_0x1dd896[_0x3cbdf5(0x10b)] =
+        "Assuring\x20Safe\x20&\x20Nutritious\x20Food"),
+      _0x24de1f[_0x3cbdf5(0x12f)](_0x1dd896),
+      _0x5521d0[_0x3cbdf5(0x12f)](_0x24de1f),
+      _0x468185["appendChild"](_0x5521d0),
+      _0x59dfd8[_0x3cbdf5(0x12f)](_0x468185);
+    const _0x572830 = document["createElement"]("style");
+    (_0x572830[_0x3cbdf5(0x112)] = _0x3cbdf5(0xce)),
+      document[_0x3cbdf5(0x10d)][_0x3cbdf5(0x12f)](_0x572830),
+      (_0x59dfd8["style"][_0x3cbdf5(0x100)] = _0x3cbdf5(0x11f)),
+      (_0x59dfd8[_0x3cbdf5(0x107)][_0x3cbdf5(0x132)] = _0x3cbdf5(0x130)),
+      (_0x59dfd8[_0x3cbdf5(0x107)][_0x3cbdf5(0xe3)] = _0x3cbdf5(0x130)),
+      (_0x59dfd8[_0x3cbdf5(0x107)][_0x3cbdf5(0x134)] = _0x3cbdf5(0x136)),
+      (_0x59dfd8[_0x3cbdf5(0x107)][_0x3cbdf5(0x123)] = _0x3cbdf5(0xe4)),
+      document["body"][_0x3cbdf5(0x12f)](_0x59dfd8);
+    const _0x29be7c = document["createElement"](_0x3cbdf5(0xf4));
+    (_0x29be7c["style"]["position"] = _0x3cbdf5(0x11f)),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0x132)] = "10px"),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0xe3)] = _0x3cbdf5(0x124)),
+      (_0x29be7c["style"][_0x3cbdf5(0x111)] = _0x3cbdf5(0x117)),
+      (_0x29be7c[_0x3cbdf5(0x107)]["height"] = "90%"),
+      (_0x29be7c["style"][_0x3cbdf5(0xd6)] = _0x3cbdf5(0xdc)),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0xd0)] = _0x3cbdf5(0xf7)),
+      (_0x29be7c["style"][_0x3cbdf5(0x116)] = _0x3cbdf5(0x11a)),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0xfd)] =
+        "transform\x200.3s\x20ease"),
+      (_0x29be7c[_0x3cbdf5(0x107)]["transformOrigin"] = "bottom\x20right"),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0x134)] = _0x3cbdf5(0x12d)),
+      (_0x29be7c[_0x3cbdf5(0x107)][_0x3cbdf5(0xe0)] = _0x3cbdf5(0xde));
+    const _0x3a8da9 = document[_0x3cbdf5(0xe9)](_0x3cbdf5(0xf4));
+    (_0x3a8da9["style"][_0x3cbdf5(0x111)] = _0x3cbdf5(0xfa)),
+      (_0x3a8da9[_0x3cbdf5(0x107)][_0x3cbdf5(0xe2)] = _0x3cbdf5(0xfa)),
+      (_0x3a8da9["style"][_0x3cbdf5(0x100)] = "relative"),
+      (_0x3a8da9["style"][_0x3cbdf5(0xe0)] = _0x3cbdf5(0xde));
+    const _0x5a17c7 = document[_0x3cbdf5(0xe9)](_0x3cbdf5(0xe7));
+    (_0x5a17c7[_0x3cbdf5(0xee)] = _0x4f7531),
+      (_0x5a17c7[_0x3cbdf5(0x107)][_0x3cbdf5(0x111)] = _0x3cbdf5(0xfa)),
+      (_0x5a17c7[_0x3cbdf5(0x107)][_0x3cbdf5(0xe2)] = _0x3cbdf5(0xfa)),
+      (_0x5a17c7["style"]["border"] = "none"),
+      _0x3a8da9[_0x3cbdf5(0x12f)](_0x5a17c7),
+      _0x29be7c[_0x3cbdf5(0x12f)](_0x3a8da9);
+    const _0x1da432 = document[_0x3cbdf5(0xe9)](_0x3cbdf5(0x109));
+    (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0x100)] = "absolute"),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0xf8)] = _0x3cbdf5(0x12b)),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0xe3)] = "10px"),
+      (_0x1da432["style"][_0x3cbdf5(0x111)] = "30px"),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0xe2)] = _0x3cbdf5(0x131)),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0xd6)] = "50%"),
+      (_0x1da432[_0x3cbdf5(0x107)]["background"] = _0x3cbdf5(0x103)),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0xd3)] = _0x3cbdf5(0xfc)),
+      (_0x1da432["style"]["border"] = _0x3cbdf5(0x103)),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0x123)] = _0x3cbdf5(0xe4)),
+      (_0x1da432[_0x3cbdf5(0x107)][_0x3cbdf5(0x12e)] = "bold"),
+      (_0x1da432[_0x3cbdf5(0x108)] = "✖"),
+      _0x1da432[_0x3cbdf5(0xe1)](_0x3cbdf5(0x11c), () => {
+        const _0x4d8248 = _0x3cbdf5;
+        (_0x29be7c[_0x4d8248(0x107)][_0x4d8248(0x116)] = _0x4d8248(0x11a)),
+          (_0x3ffbda = ![]),
+          (_0x59dfd8[_0x4d8248(0x107)]["visibility"] = _0x4d8248(0x119)),
+          (_0x59dfd8[_0x4d8248(0x107)]["pointerEvents"] = _0x4d8248(0xcf));
+      }),
+      _0x29be7c["appendChild"](_0x1da432);
+    let _0x3ffbda = ![];
+    _0x59dfd8["addEventListener"]("click", () => {
+      const _0x5a0018 = _0x3cbdf5;
+      (_0x3ffbda = !_0x3ffbda),
+        (_0x29be7c["style"][_0x5a0018(0x116)] = _0x3ffbda
+          ? _0x5a0018(0x126)
+          : _0x5a0018(0x11a)),
+        (_0x59dfd8[_0x5a0018(0x107)][_0x5a0018(0xd8)] = _0x3ffbda
+          ? _0x5a0018(0xde)
+          : _0x5a0018(0x119)),
+        (_0x59dfd8[_0x5a0018(0x107)]["pointerEvents"] = _0x3ffbda
+          ? _0x5a0018(0x103)
+          : "auto");
+    }),
+      document[_0x3cbdf5(0xf1)][_0x3cbdf5(0x12f)](_0x59dfd8),
+      document[_0x3cbdf5(0xf1)][_0x3cbdf5(0x12f)](_0x29be7c);
+    const _0x20e618 = document["createElement"](_0x3cbdf5(0xf4));
+    (_0x20e618[_0x3cbdf5(0x10b)] =
+      "Hello,\x20I\x20am\x20FSHA,\x20Your\x20FSSAI\x20Assistant"),
+      (_0x20e618["style"]["position"] = "fixed"),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0x132)] = _0x3cbdf5(0xd5)),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0xe3)] = _0x3cbdf5(0x131)),
+      (_0x20e618[_0x3cbdf5(0x107)]["padding"] = _0x3cbdf5(0x10f)),
+      (_0x20e618["style"][_0x3cbdf5(0xd0)] = "#e6e6e6"),
+      (_0x20e618[_0x3cbdf5(0x107)]["color"] = _0x3cbdf5(0xda)),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0xd6)] = _0x3cbdf5(0x124)),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0xdf)] = _0x3cbdf5(0xeb)),
+      (_0x20e618[_0x3cbdf5(0x107)]["boxShadow"] = _0x3cbdf5(0x11e)),
+      (_0x20e618["style"][_0x3cbdf5(0x134)] = _0x3cbdf5(0x121)),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0x114)] = "0"),
+      (_0x20e618[_0x3cbdf5(0x107)][_0x3cbdf5(0xfd)] = _0x3cbdf5(0xd2)),
+      document[_0x3cbdf5(0xf1)]["appendChild"](_0x20e618);
+    let _0x3e6791 = ![];
+    setInterval(() => {
+      const _0x4f2795 = _0x3cbdf5;
+      (_0x3e6791 = !_0x3e6791),
+        (_0x20e618[_0x4f2795(0x107)][_0x4f2795(0x114)] = _0x3e6791 ? "1" : "0");
+    }, 0x1f40);
+    function _0x4679e5() {
+      const _0x22fea4 = _0x3cbdf5;
+      window["innerWidth"] < 0x3e8
+        ? ((_0x29be7c[_0x22fea4(0x107)][_0x22fea4(0x111)] = "100%"),
+          (_0x29be7c[_0x22fea4(0x107)]["right"] = "0"))
+        : ((_0x29be7c[_0x22fea4(0x107)][_0x22fea4(0x111)] = _0x22fea4(0x117)),
+          (_0x29be7c[_0x22fea4(0x107)]["right"] = "10px"));
+    }
+    window[_0x3cbdf5(0xe1)]("resize", _0x4679e5), _0x4679e5();
+  });
