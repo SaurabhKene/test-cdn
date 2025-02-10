@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(currentScript.src.split("?")[1]);
   const model = params.get("model") || "defaultModel";
 
-  const chatbotUrl = `http://chatbot.logicsoft.online:8083?model=${model}`;
+  const chatbotUrl = `http://localhost:3000/?model=${model}`;
 
   const svgNamespace = "http://www.w3.org/2000/svg";
   const xlinkNamespace = "http://www.w3.org/1999/xlink";
@@ -25,13 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   svg.setAttribute("space", "preserve");
 
   const image = document.createElementNS(svgNamespace, "image");
-  image.setAttribute(
-    "href",
-    "https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/chaticon2.png"
-  );
-  image.setAttribute("x", "27");
-  image.setAttribute("y", "2");
-  image.setAttribute("width", "50");
+  image.setAttribute("href", "Images/Animation - 1738834021266.gif");
+  image.setAttribute("x", "17");
+  image.setAttribute("y", "5");
+  image.setAttribute("width", "70");
   image.setAttribute("height", "93");
   svg.appendChild(image);
 
@@ -48,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   textGroup.appendChild(path);
 
   const text = document.createElementNS(svgNamespace, "text");
-  text.setAttribute("style", "fill:#ef501d; font-size: 11px"); // Set font size to 11px
+  text.setAttribute("style", "fill:#ff5e04; font-size: 11px"); // Set font size to 11px
 
   const textPath = document.createElementNS(svgNamespace, "textPath");
   textPath.setAttributeNS(xlinkNamespace, "href", "#textPath");
@@ -90,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   svg.style.position = "fixed";
   svg.style.bottom = "20px";
   svg.style.right = "20px";
-  svg.style.zIndex = "9999";
+  svg.style.zIndex = "999999";
   svg.style.cursor = "pointer";
 
   document.body.appendChild(svg);
@@ -99,16 +96,16 @@ document.addEventListener("DOMContentLoaded", function () {
   chatbotContainer.style.position = "fixed";
   chatbotContainer.style.bottom = "10px";
   chatbotContainer.style.right = "10px";
-  chatbotContainer.style.width = "35%";
+  chatbotContainer.style.width = "30%";
   chatbotContainer.style.height = "90%";
-  chatbotContainer.style.border = "1px solid #ff5e04";
+  //chatbotContainer.style.border = "1px solid #ff5e04";
   chatbotContainer.style.borderRadius = "8px";
   chatbotContainer.style.backgroundColor = "#fff";
   chatbotContainer.style.transform = "scale(0)";
   chatbotContainer.style.transition = "transform 0.3s ease";
   chatbotContainer.style.transformOrigin = "bottom right";
-  chatbotContainer.style.zIndex = "99999";
-  chatbotContainer.style.overflow = "hidden"; // Hide overflow content
+  chatbotContainer.style.zIndex = "510000000";
+  chatbotContainer.style.overflow = "hidden";
 
   const innerDiv = document.createElement("div");
   innerDiv.style.width = "100%";
@@ -128,23 +125,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const closeButton = document.createElement("button");
   closeButton.style.position = "absolute";
-  closeButton.style.top = "10px";
+  closeButton.style.top = "16px";
   closeButton.style.right = "10px";
   closeButton.style.width = "30px";
   closeButton.style.height = "30px";
   closeButton.style.borderRadius = "50%";
   closeButton.style.background = "none";
-  closeButton.style.color = "#fff";
+  closeButton.style.color = "black";
   closeButton.style.border = "none";
   closeButton.style.cursor = "pointer";
   closeButton.style.fontWeight = "bold";
-  closeButton.innerText = "X";
+  closeButton.innerText = "✖";
 
   closeButton.addEventListener("click", () => {
     chatbotContainer.style.transform = "scale(0)";
     isOpen = false;
     svg.style.visibility = "visible";
-    svg.style.pointerEvents = "auto"; // Enable clicks on main button
+    svg.style.pointerEvents = "auto";
   });
 
   chatbotContainer.appendChild(closeButton);
@@ -169,11 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
   messageBubble.style.padding = "10px 15px";
   messageBubble.style.backgroundColor = "#e6e6e6";
   messageBubble.style.color = "#000000";
-  messageBubble.style.borderRadius = "15px";
+  messageBubble.style.borderRadius = "10px";
   messageBubble.style.fontSize = "14px";
   messageBubble.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
-  messageBubble.style.zIndex = "99998";
-  messageBubble.style.opacity = "0"; // Initially hidden
+  messageBubble.style.zIndex = "509999990";
+  messageBubble.style.opacity = "0";
   messageBubble.style.transition = "opacity 0.3s ease";
   document.body.appendChild(messageBubble);
 
@@ -182,4 +179,19 @@ document.addEventListener("DOMContentLoaded", function () {
     isMessageVisible = !isMessageVisible;
     messageBubble.style.opacity = isMessageVisible ? "1" : "0";
   }, 8000);
+
+  // Media query to handle screen resize
+  function handleResize() {
+    if (window.innerWidth < 1000) {
+      chatbotContainer.style.width = "100%";
+      chatbotContainer.style.right = "0";
+    } else {
+      chatbotContainer.style.width = "30%";
+      chatbotContainer.style.right = "10px";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  handleResize();
 });
