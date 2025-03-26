@@ -1,1 +1,256 @@
-const _0x46b76c=_0x1ac5;function _0x1ac5(_0x118186,_0x19d804){const _0x3db44c=_0x3db4();return _0x1ac5=function(_0x1ac55c,_0x2e7a93){_0x1ac55c=_0x1ac55c-0x16e;let _0x421f93=_0x3db44c[_0x1ac55c];return _0x421f93;},_0x1ac5(_0x118186,_0x19d804);}(function(_0x3f7f29,_0x314a76){const _0x88b824=_0x1ac5,_0x32fdc1=_0x3f7f29();while(!![]){try{const _0x4e1653=-parseInt(_0x88b824(0x1dc))/0x1+-parseInt(_0x88b824(0x1d5))/0x2+-parseInt(_0x88b824(0x173))/0x3*(parseInt(_0x88b824(0x1bc))/0x4)+parseInt(_0x88b824(0x176))/0x5+parseInt(_0x88b824(0x194))/0x6+-parseInt(_0x88b824(0x1d0))/0x7+parseInt(_0x88b824(0x1df))/0x8*(parseInt(_0x88b824(0x1c2))/0x9);if(_0x4e1653===_0x314a76)break;else _0x32fdc1['push'](_0x32fdc1['shift']());}catch(_0xee841f){_0x32fdc1['push'](_0x32fdc1['shift']());}}}(_0x3db4,0xd3ae5),document[_0x46b76c(0x181)](_0x46b76c(0x1c9),function(){const _0x51aaf4=_0x46b76c,_0x5891ff=[...document[_0x51aaf4(0x1a2)](_0x51aaf4(0x182))],_0x255b94=_0x5891ff[_0x51aaf4(0x170)](_0x14dc98=>_0x14dc98[_0x51aaf4(0x17b)][_0x51aaf4(0x1b8)](_0x51aaf4(0x1d1))),_0x286e40=new URLSearchParams(_0x255b94[_0x51aaf4(0x17b)][_0x51aaf4(0x17d)]('?')[0x1]),_0x4ddcee=_0x286e40['get'](_0x51aaf4(0x183))||_0x51aaf4(0x174),_0x13a095=_0x51aaf4(0x1b3)+_0x4ddcee,_0x403e78=_0x51aaf4(0x178),_0x1ef2ef=_0x51aaf4(0x1a1),_0x5e6309=document['createElementNS'](_0x403e78,_0x51aaf4(0x185));_0x5e6309[_0x51aaf4(0x1ad)](_0x51aaf4(0x1cd),_0x51aaf4(0x1e1)),_0x5e6309['setAttribute'](_0x51aaf4(0x187),_0x403e78),_0x5e6309[_0x51aaf4(0x1ad)](_0x51aaf4(0x1cb),_0x1ef2ef),_0x5e6309[_0x51aaf4(0x1ad)]('x',_0x51aaf4(0x18f)),_0x5e6309[_0x51aaf4(0x1ad)]('y','0px'),_0x5e6309[_0x51aaf4(0x1ad)](_0x51aaf4(0x18b),'120px'),_0x5e6309['setAttribute'](_0x51aaf4(0x189),_0x51aaf4(0x1cf)),_0x5e6309[_0x51aaf4(0x1ad)](_0x51aaf4(0x1aa),_0x51aaf4(0x19d)),_0x5e6309[_0x51aaf4(0x1ad)]('enable-background','new\x200\x200\x20100\x20100'),_0x5e6309['setAttribute']('space',_0x51aaf4(0x1b4));const _0x5ebb31=document[_0x51aaf4(0x19c)](_0x403e78,'image');if(_0x4ddcee==='1')_0x5ebb31[_0x51aaf4(0x1ad)](_0x51aaf4(0x193),_0x51aaf4(0x18d));else _0x4ddcee==='3'&&_0x5ebb31['setAttribute']('href',_0x51aaf4(0x18d));_0x5ebb31[_0x51aaf4(0x1ad)]('x','17'),_0x5ebb31['setAttribute']('y','5'),_0x5ebb31[_0x51aaf4(0x1ad)]('width','70'),_0x5ebb31[_0x51aaf4(0x1ad)](_0x51aaf4(0x189),'93'),_0x5e6309[_0x51aaf4(0x1dd)](_0x5ebb31);const _0x447834=document[_0x51aaf4(0x19c)](_0x403e78,'g');_0x447834['setAttribute']('id','rotatingText');const _0x28ded0=document[_0x51aaf4(0x19c)](_0x403e78,_0x51aaf4(0x1c0));_0x28ded0['setAttribute']('id','textPath'),_0x28ded0['setAttribute'](_0x51aaf4(0x180),_0x51aaf4(0x175)),_0x28ded0[_0x51aaf4(0x1ad)]('d',_0x51aaf4(0x1af)),_0x447834[_0x51aaf4(0x1dd)](_0x28ded0);const _0x46f1c4=document[_0x51aaf4(0x19c)](_0x403e78,_0x51aaf4(0x16e));_0x4ddcee==='3'?_0x46f1c4['setAttribute'](_0x51aaf4(0x1ab),_0x51aaf4(0x1e0)):_0x46f1c4[_0x51aaf4(0x1ad)](_0x51aaf4(0x1ab),_0x51aaf4(0x18a));const _0x288bf6=document[_0x51aaf4(0x19c)](_0x403e78,'textPath');_0x288bf6[_0x51aaf4(0x1ae)](_0x1ef2ef,_0x51aaf4(0x193),_0x51aaf4(0x179));if(_0x4ddcee==='1'){const _0x380527=document[_0x51aaf4(0x19c)](_0x403e78,_0x51aaf4(0x1c4));_0x380527[_0x51aaf4(0x1ad)]('x','0'),_0x380527[_0x51aaf4(0x1bb)]=_0x51aaf4(0x1b2),_0x288bf6['appendChild'](_0x380527);}else{if(_0x4ddcee==='3'){const _0x4cad0d=document[_0x51aaf4(0x19c)](_0x403e78,_0x51aaf4(0x1c4));_0x4cad0d[_0x51aaf4(0x1ad)]('x','0'),_0x4cad0d[_0x51aaf4(0x1bb)]=_0x51aaf4(0x172),_0x288bf6['appendChild'](_0x4cad0d);}}if(_0x4ddcee==='1'){const _0x2d3902=document[_0x51aaf4(0x19c)](_0x403e78,_0x51aaf4(0x1c4));_0x2d3902[_0x51aaf4(0x1ad)]('x','52'),_0x2d3902[_0x51aaf4(0x1ad)]('dx','40'),_0x2d3902[_0x51aaf4(0x1bb)]=_0x51aaf4(0x1a9),_0x288bf6[_0x51aaf4(0x1dd)](_0x2d3902);}else{if(_0x4ddcee==='3'){const _0x16734c=document[_0x51aaf4(0x19c)](_0x403e78,'tspan');_0x16734c['setAttribute']('x','52'),_0x16734c[_0x51aaf4(0x1ad)]('dx','40'),_0x16734c[_0x51aaf4(0x1bb)]=_0x51aaf4(0x17e),_0x288bf6['appendChild'](_0x16734c);}}_0x46f1c4['appendChild'](_0x288bf6),_0x447834[_0x51aaf4(0x1dd)](_0x46f1c4),_0x5e6309[_0x51aaf4(0x1dd)](_0x447834);const _0x277fbc=document[_0x51aaf4(0x1d6)]('style');_0x277fbc[_0x51aaf4(0x197)]=_0x51aaf4(0x192),document[_0x51aaf4(0x1d3)][_0x51aaf4(0x1dd)](_0x277fbc),_0x5e6309[_0x51aaf4(0x1ab)][_0x51aaf4(0x18e)]='fixed',_0x5e6309[_0x51aaf4(0x1ab)]['bottom']='20px',_0x5e6309[_0x51aaf4(0x1ab)][_0x51aaf4(0x19e)]=_0x51aaf4(0x188),_0x5e6309[_0x51aaf4(0x1ab)]['zIndex']=_0x51aaf4(0x17c),_0x5e6309[_0x51aaf4(0x1ab)]['cursor']=_0x51aaf4(0x16f),document[_0x51aaf4(0x1b1)][_0x51aaf4(0x1dd)](_0x5e6309);const _0x115f2e=document[_0x51aaf4(0x1d6)](_0x51aaf4(0x1c7));_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x18e)]='fixed',_0x115f2e['style'][_0x51aaf4(0x195)]='10px',_0x115f2e[_0x51aaf4(0x1ab)]['right']=_0x51aaf4(0x198),_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x18b)]='30%',_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x189)]=_0x51aaf4(0x1a7),_0x115f2e['style'][_0x51aaf4(0x1d2)]=_0x51aaf4(0x1c6),_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x199)]=_0x51aaf4(0x1c5),_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x184)]=_0x51aaf4(0x1c3),_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x1b5)]='transform\x200.3s\x20ease',_0x115f2e[_0x51aaf4(0x1ab)][_0x51aaf4(0x177)]=_0x51aaf4(0x1a8),_0x115f2e['style'][_0x51aaf4(0x1cc)]='510000000',_0x115f2e['style'][_0x51aaf4(0x171)]=_0x51aaf4(0x1c1);const _0x291d5e=document['createElement']('div');_0x291d5e[_0x51aaf4(0x1ab)][_0x51aaf4(0x18b)]=_0x51aaf4(0x1d4),_0x291d5e['style'][_0x51aaf4(0x189)]=_0x51aaf4(0x1d4),_0x291d5e['style']['position']='relative',_0x291d5e['style'][_0x51aaf4(0x171)]=_0x51aaf4(0x1c1);const _0x355522=document['createElement']('iframe');_0x355522[_0x51aaf4(0x17b)]=_0x13a095,_0x355522[_0x51aaf4(0x1ab)][_0x51aaf4(0x18b)]=_0x51aaf4(0x1d4),_0x355522[_0x51aaf4(0x1ab)][_0x51aaf4(0x189)]='100%',_0x355522[_0x51aaf4(0x1ab)]['border']=_0x51aaf4(0x175),_0x291d5e[_0x51aaf4(0x1dd)](_0x355522),_0x115f2e[_0x51aaf4(0x1dd)](_0x291d5e);const _0x212ce4=document[_0x51aaf4(0x1d6)](_0x51aaf4(0x191));_0x212ce4[_0x51aaf4(0x1ab)][_0x51aaf4(0x18e)]='absolute',_0x212ce4['style'][_0x51aaf4(0x1d8)]=_0x51aaf4(0x17a),_0x212ce4['style']['right']='10px',_0x212ce4['style'][_0x51aaf4(0x18b)]=_0x51aaf4(0x196),_0x212ce4[_0x51aaf4(0x1ab)][_0x51aaf4(0x189)]='30px',_0x212ce4[_0x51aaf4(0x1ab)]['borderRadius']=_0x51aaf4(0x1d9),_0x212ce4[_0x51aaf4(0x1ab)]['background']='none',_0x212ce4['style'][_0x51aaf4(0x1a6)]='black',_0x212ce4[_0x51aaf4(0x1ab)][_0x51aaf4(0x1a5)]=_0x51aaf4(0x175),_0x212ce4[_0x51aaf4(0x1ab)][_0x51aaf4(0x1da)]=_0x51aaf4(0x16f),_0x212ce4[_0x51aaf4(0x1ab)]['fontWeight']='bold',_0x212ce4[_0x51aaf4(0x1ba)]='✖',_0x212ce4[_0x51aaf4(0x181)]('click',()=>{const _0x51a755=_0x51aaf4;_0x115f2e[_0x51a755(0x1ab)][_0x51a755(0x184)]=_0x51a755(0x1c3),_0x2cea6d=![],_0x5e6309[_0x51a755(0x1ab)][_0x51a755(0x18c)]=_0x51a755(0x190),_0x5e6309[_0x51a755(0x1ab)]['pointerEvents']=_0x51a755(0x1bd);}),_0x115f2e['appendChild'](_0x212ce4);const _0x108a26=document[_0x51aaf4(0x1d6)](_0x51aaf4(0x191));_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x18e)]=_0x51aaf4(0x19f),_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x1d8)]=_0x51aaf4(0x17a),_0x108a26['style'][_0x51aaf4(0x19e)]=_0x51aaf4(0x1bf),_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x18b)]=_0x51aaf4(0x196),_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x189)]=_0x51aaf4(0x196),_0x108a26['style'][_0x51aaf4(0x1d2)]=_0x51aaf4(0x1d9),_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x17f)]='none',_0x108a26[_0x51aaf4(0x1ab)]['color']=_0x51aaf4(0x1b7),_0x108a26['style']['border']=_0x51aaf4(0x175),_0x108a26[_0x51aaf4(0x1ab)][_0x51aaf4(0x1da)]=_0x51aaf4(0x16f),_0x108a26['style']['fontWeight']=_0x51aaf4(0x1ca),_0x108a26['innerText']='',_0x108a26[_0x51aaf4(0x181)](_0x51aaf4(0x1d7),()=>{const _0x18f917=_0x51aaf4;_0x355522[_0x18f917(0x17b)]=_0x355522[_0x18f917(0x17b)];}),_0x115f2e[_0x51aaf4(0x1dd)](_0x108a26);let _0x2cea6d=![];_0x5e6309[_0x51aaf4(0x181)](_0x51aaf4(0x1d7),()=>{const _0x4be3a6=_0x51aaf4;_0x2cea6d=!_0x2cea6d,_0x115f2e[_0x4be3a6(0x1ab)][_0x4be3a6(0x184)]=_0x2cea6d?_0x4be3a6(0x1b6):_0x4be3a6(0x1c3),_0x5e6309[_0x4be3a6(0x1ab)][_0x4be3a6(0x18c)]=_0x2cea6d?'hidden':_0x4be3a6(0x190),_0x5e6309[_0x4be3a6(0x1ab)][_0x4be3a6(0x1ac)]=_0x2cea6d?_0x4be3a6(0x175):_0x4be3a6(0x1bd);}),document[_0x51aaf4(0x1b1)][_0x51aaf4(0x1dd)](_0x5e6309),document[_0x51aaf4(0x1b1)][_0x51aaf4(0x1dd)](_0x115f2e);const _0x4ac262=document['createElement'](_0x51aaf4(0x1c7));_0x4ac262['textContent']=_0x4ddcee==='3'?_0x51aaf4(0x1db):_0x51aaf4(0x186),_0x4ac262[_0x51aaf4(0x1ab)]['position']='fixed',_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x195)]=_0x51aaf4(0x1cf),_0x4ac262['style']['right']=_0x51aaf4(0x196),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1b0)]=_0x51aaf4(0x1ce),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x199)]=_0x51aaf4(0x1c8),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1a6)]='#000000',_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1d2)]=_0x51aaf4(0x198),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1a0)]='14px',_0x4ac262['style'][_0x51aaf4(0x1a3)]=_0x51aaf4(0x19b),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1cc)]=_0x51aaf4(0x1be),_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1b9)]='1',_0x4ac262[_0x51aaf4(0x1ab)][_0x51aaf4(0x1b5)]='opacity\x200.3s\x20ease',document[_0x51aaf4(0x1b1)][_0x51aaf4(0x1dd)](_0x4ac262);let _0x53232f=![];setInterval(()=>{const _0xcd87ab=_0x51aaf4;_0x53232f=!_0x53232f,_0x4ac262[_0xcd87ab(0x1ab)][_0xcd87ab(0x1b9)]=_0x53232f?'1':'0';},0x7d0);function _0x4a8cc7(){const _0x287e76=_0x51aaf4;window[_0x287e76(0x1a4)]<0x3e8?(_0x115f2e[_0x287e76(0x1ab)][_0x287e76(0x18b)]='100%',_0x115f2e[_0x287e76(0x1ab)][_0x287e76(0x19e)]='0'):(_0x115f2e[_0x287e76(0x1ab)][_0x287e76(0x18b)]=_0x287e76(0x19a),_0x115f2e['style'][_0x287e76(0x19e)]=_0x287e76(0x198));}window['addEventListener'](_0x51aaf4(0x1de),_0x4a8cc7),_0x4a8cc7();}));function _0x3db4(){const _0x3ad15e=['find','overflow','Trusted\x20Standards\x20','2811PRqyOQ','defaultModel','none','3334755ipyLBL','transformOrigin','http://www.w3.org/2000/svg','#textPath','16px','src','999999','split','Ensuring\x20Safe\x20&\x20Nutritious\x20Food','background','fill','addEventListener','script','model','transform','svg','Hello,\x20I\x20am\x20Bharatgap,\x20Your\x20FSSAI\x20Assistant','xmlns','20px','height','fill:#ff5e04;\x20font-size:\x2011px;','width','visibility','https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/Animation\x20-\x201738834021266.gif','position','0px','visible','button','\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20rotateText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(0deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(360deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20#rotatingText\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20rotateText\x2010s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform-origin:\x2050%\x2050%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','href','6672414LScmGC','bottom','30px','innerHTML','10px','backgroundColor','30%','0px\x204px\x206px\x20rgba(0,\x200,\x200,\x200.1)','createElementNS','0\x200\x20100\x20100','right','absolute','fontSize','http://www.w3.org/1999/xlink','getElementsByTagName','boxShadow','innerWidth','border','color','90%','bottom\x20right','Assuring\x20Safe\x20&\x20Nutritious\x20Food','viewBox','style','pointerEvents','setAttribute','setAttributeNS','M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40\x20c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z','padding','body','Inspiring\x20Trust,\x20','https://chatbot.logicsoft.online:8083/?model=','preserve','transition','scale(1)','black','includes','opacity','innerText','textContent','3928AEmQVS','auto','509999990','45px','path','hidden','995103kqNKOW','scale(0)','tspan','#fff','8px','div','#e6e6e6','DOMContentLoaded','bold','xmlns:xlink','zIndex','version','10px\x2015px','120px','3435565stsuPD','script.js','borderRadius','head','100%','566552hstKPb','createElement','click','top','50%','cursor','Hello,\x20I\x20am\x20your\x20BharatGAP\x20Assistant','876275oCVOSf','appendChild','resize','120aUXEBl','fill:#2e2e2e;\x20font-size:\x2010px;','1.1','text','pointer'];_0x3db4=function(){return _0x3ad15e;};return _0x3db4();}
+document.addEventListener("DOMContentLoaded", function () {
+  const scripts = [...document.getElementsByTagName("script")];
+  const currentScript = scripts.find((script) =>
+    script.src.includes("script.js")
+  );
+
+  const params = new URLSearchParams(currentScript.src.split("?")[1]);
+  const model = params.get("model") || "defaultModel";
+
+  const chatbotUrl = `https://chatbot.logicsoft.online:8083/?model=${model}`;
+
+  const svgNamespace = "http://www.w3.org/2000/svg";
+  const xlinkNamespace = "http://www.w3.org/1999/xlink";
+
+  const svg = document.createElementNS(svgNamespace, "svg");
+  svg.setAttribute("version", "1.1");
+  svg.setAttribute("xmlns", svgNamespace);
+  svg.setAttribute("xmlns:xlink", xlinkNamespace);
+  svg.setAttribute("x", "0px");
+  svg.setAttribute("y", "0px");
+  svg.setAttribute("width", "120px");
+  svg.setAttribute("height", "120px");
+  svg.setAttribute("viewBox", "0 0 100 100");
+  svg.setAttribute("enable-background", "new 0 0 100 100");
+  svg.setAttribute("space", "preserve");
+
+  const image = document.createElementNS(svgNamespace, "image");
+
+  if(model === "1"){
+    image.setAttribute(
+      "href",
+      "https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/Animation\x20-\x201738834021266.gif"
+    );
+  }else if(model === "3"){
+    image.setAttribute(
+      "href",
+      "https://cdn.jsdelivr.net/gh/SaurabhKene/test-cdn/Images/bharatgif.gif"
+    );
+  }
+ 
+  image.setAttribute("x", "11");
+  image.setAttribute("y", "0");
+  image.setAttribute("width", "80");
+  image.setAttribute("height", "103");
+  svg.appendChild(image);
+
+  const textGroup = document.createElementNS(svgNamespace, "g");
+  textGroup.setAttribute("id", "rotatingText");
+
+  const path = document.createElementNS(svgNamespace, "path");
+  path.setAttribute("id", "textPath");
+  path.setAttribute("fill", "none");
+  path.setAttribute(
+    "d",
+    "M89.322,50.197c0,22.09-17.91,40-40,40c-22.089,0-40-17.91-40-40 c0-22.089,17.911-40,40-40C71.412,10.197,89.322,28.108,89.322,50.197z"
+  );
+  textGroup.appendChild(path);
+
+  const text = document.createElementNS(svgNamespace, "text");
+  // text.setAttribute("style", "fill:#ff5e04; font-size: 10px"); // Set font size to 11px
+
+  if (model === "3") {
+    text.setAttribute("style", "fill:#2e2e2e; font-size: 10px;");
+  } else {
+    text.setAttribute("style", "fill:#ff5e04; font-size: 11px;"); // Change as needed
+  }
+
+  const textPath = document.createElementNS(svgNamespace, "textPath");
+  textPath.setAttributeNS(xlinkNamespace, "href", "#textPath");
+
+  if (model === "1") {
+    const tspan1 = document.createElementNS(svgNamespace, "tspan");
+    tspan1.setAttribute("x", "0");
+    tspan1.textContent = "Inspiring Trust, ";
+    textPath.appendChild(tspan1);
+  } else if (model === "3") {
+    const tspan1 = document.createElementNS(svgNamespace, "tspan");
+    tspan1.setAttribute("x", "0");
+    tspan1.textContent = "Trusted Standards ";
+    textPath.appendChild(tspan1);
+  }
+
+  if (model === "1") {
+    const tspan2 = document.createElementNS(svgNamespace, "tspan");
+    tspan2.setAttribute("x", "52");
+    tspan2.setAttribute("dx", "40");
+    tspan2.textContent = "Assuring Safe & Nutritious Food";
+    textPath.appendChild(tspan2);
+  } else if (model === "3") {
+    const tspan2 = document.createElementNS(svgNamespace, "tspan");
+    tspan2.setAttribute("x", "52");
+    tspan2.setAttribute("dx", "40");
+    tspan2.textContent = "Ensuring Safe & Nutritious Food";
+    textPath.appendChild(tspan2);
+  }
+
+  text.appendChild(textPath);
+  textGroup.appendChild(text);
+
+  svg.appendChild(textGroup);
+
+  const style = document.createElement("style");
+  style.innerHTML = `
+      @keyframes rotateText {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      #rotatingText {
+        animation: rotateText 10s linear infinite;
+        transform-origin: 50% 50%;
+      }
+    `;
+  document.head.appendChild(style);
+
+  svg.style.position = "fixed";
+  svg.style.bottom = "20px";
+  svg.style.right = "20px";
+  svg.style.zIndex = "999999";
+  svg.style.cursor = "pointer";
+
+  document.body.appendChild(svg);
+
+  const chatbotContainer = document.createElement("div");
+  chatbotContainer.style.position = "fixed";
+  chatbotContainer.style.bottom = "10px";
+  chatbotContainer.style.right = "10px";
+  chatbotContainer.style.width = "30%";
+  chatbotContainer.style.height = "90%";
+  //chatbotContainer.style.border = "1px solid #ff5e04";
+  chatbotContainer.style.borderRadius = "8px";
+  chatbotContainer.style.backgroundColor = "#fff";
+  chatbotContainer.style.transform = "scale(0)";
+  chatbotContainer.style.transition = "transform 0.3s ease";
+  chatbotContainer.style.transformOrigin = "bottom right";
+  chatbotContainer.style.zIndex = "510000000";
+  chatbotContainer.style.overflow = "hidden";
+
+  const innerDiv = document.createElement("div");
+  innerDiv.style.width = "100%";
+  innerDiv.style.height = "100%";
+  innerDiv.style.position = "relative";
+  innerDiv.style.overflow = "hidden";
+
+  const iframe = document.createElement("iframe");
+  iframe.src = chatbotUrl;
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
+  iframe.style.border = "none";
+
+  innerDiv.appendChild(iframe);
+
+  chatbotContainer.appendChild(innerDiv);
+
+  const closeButton = document.createElement("button");
+  closeButton.style.position = "absolute";
+  closeButton.style.top = "16px";
+  closeButton.style.right = "10px";
+  closeButton.style.width = "30px";
+  closeButton.style.height = "30px";
+  closeButton.style.borderRadius = "50%";
+  closeButton.style.background = "none";
+  closeButton.style.color = "black";
+  closeButton.style.border = "none";
+  closeButton.style.cursor = "pointer";
+  closeButton.style.fontWeight = "bold";
+  closeButton.innerText = "✖";
+
+  closeButton.addEventListener("click", () => {
+    chatbotContainer.style.transform = "scale(0)";
+    isOpen = false;
+    svg.style.visibility = "visible";
+    svg.style.pointerEvents = "auto";
+  });
+
+  chatbotContainer.appendChild(closeButton);
+
+  const refreshButton = document.createElement("button");
+  refreshButton.style.position = "absolute";
+  refreshButton.style.top = "16px";
+  refreshButton.style.right = "45px";
+  refreshButton.style.width = "30px";
+  refreshButton.style.height = "30px";
+  refreshButton.style.borderRadius = "50%";
+  refreshButton.style.background = "none";
+  refreshButton.style.color = "black";
+  refreshButton.style.border = "none";
+  refreshButton.style.cursor = "pointer";
+  refreshButton.style.fontWeight = "bold";
+  refreshButton.innerText = "";
+
+  // Refresh iframe on click
+  refreshButton.addEventListener("click", () => {
+    iframe.src = iframe.src;
+  });
+
+  chatbotContainer.appendChild(refreshButton);
+
+  let isOpen = false;
+
+  svg.addEventListener("click", () => {
+    isOpen = !isOpen;
+    chatbotContainer.style.transform = isOpen ? "scale(1)" : "scale(0)";
+    svg.style.visibility = isOpen ? "hidden" : "visible";
+    svg.style.pointerEvents = isOpen ? "none" : "auto";
+  });
+
+  document.body.appendChild(svg);
+  document.body.appendChild(chatbotContainer);
+
+  const messageBubble = document.createElement("div");
+
+  // Set message based on model value
+  messageBubble.textContent =
+    model === "3"
+      ? "Hello, I am your BharatGAP Assistant"
+      : "Hello, I am Bharatgap, Your FSSAI Assistant";
+
+  messageBubble.style.position = "fixed";
+  messageBubble.style.bottom = "120px";
+  messageBubble.style.right = "30px";
+  messageBubble.style.padding = "10px 15px";
+  messageBubble.style.backgroundColor = "#e6e6e6";
+  messageBubble.style.color = "#000000";
+  messageBubble.style.borderRadius = "10px";
+  messageBubble.style.fontSize = "14px";
+  messageBubble.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
+  messageBubble.style.zIndex = "509999990";
+  messageBubble.style.opacity = "1"; // Set opacity to make it visible
+  messageBubble.style.transition = "opacity 0.3s ease";
+
+  document.body.appendChild(messageBubble);
+  let isMessageVisible = false;
+  setInterval(() => {
+    isMessageVisible = !isMessageVisible;
+    messageBubble.style.opacity = isMessageVisible ? "1" : "0";
+  }, 6000);
+
+  // Media query to handle screen resize
+  function handleResize() {
+    if (window.innerWidth < 1000) {
+      chatbotContainer.style.width = "100%";
+      chatbotContainer.style.right = "0";
+    } else {
+      chatbotContainer.style.width = "30%";
+      chatbotContainer.style.right = "10px";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  handleResize();
+});
